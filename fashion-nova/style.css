@@ -34,14 +34,17 @@ header{
     top: 35%;
     margin: 0%;
     z-index: 5;
+    transition: linear 2s !important;
 }
 
 .header-name-cont > .model-container {
     width: 350px;
     height: 350px;
+    background-color: #000;
     overflow: hidden;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     z-index: 3;
+    animation: animateBox 4s ease;
 }
 
 .model-nova {
@@ -73,4 +76,24 @@ nav ul li {
 
 .none{
     display: none;
+}
+
+/* ---------------------- */
+@keyframes animateBox {
+   from{
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+        
+    }
+
+    to{
+        border-radius: 100%;
+    }
+
+    to{
+       width:85%;
+    }
 }

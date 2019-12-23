@@ -2,8 +2,10 @@ const headerName = document.getElementById('headerName');
 const modelCont = document.getElementById('modelCont');
 
 const animateName = () => {
+
     setTimeout(() => {
         headerName.innerHTML = 'to';
+        headerName.style.transition = '.5s ease-out';
     }, 1000);
 
     setTimeout(() => {
@@ -16,7 +18,7 @@ const animateName = () => {
 }
 
 const animateModelCont = () => {
-    setTimeout(() => {
+    /* setTimeout(() => {
         modelCont.style.transform = 'rotate(360deg)';
     }, 1000);
 
@@ -27,7 +29,11 @@ const animateModelCont = () => {
     setTimeout(() => {
         modelCont.style.borderRadius = '0%';
         modelCont.style.width = '85%';
-    }, 3000);
+    }, 4000); */
+
+    setTimeout(() => {
+        modelCont.style.display = 'none'
+    }, 4000);
 }
 
 const animateHeader = () => {
